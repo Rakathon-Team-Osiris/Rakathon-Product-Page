@@ -1,0 +1,393 @@
+/* Base Styles */
+body {
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2e6d9; /* Light beige background */
+    color: #4a3e3a; /* Dark brown text */
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    color: #ead0b5; /* Warm brown color */
+}
+
+h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #6b4e31; /* Warm brown color */
+}
+
+/* Header Styles */
+/* Header Styles */
+header {
+    position: relative;
+    height: 100vh;
+    background: url('assets/gigi-hadid-fashion-model-photoshoot-uhdpaper.com-4K-6.2457.jpg') no-repeat center center/cover; /* Background image */
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* White with 50% opacity */
+    z-index: 1;
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header h1, header p {
+    font-family: 'Playfair Display', serif;
+    text-shadow: 1px 1px 0 #000, 
+                 -1px -1px 0 #000,
+                 1px -1px 0 #000,
+                 -1px 1px 0 #000; /* Black border effect */
+}
+
+header h1 {
+    font-size: 64px;
+    margin: 0;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+header p {
+    font-size: 24px;
+    margin: 20px 0 30px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.cta-button {
+    background: #b58b63; /* Coffee brown color */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 18px;
+    margin: 10px;
+    transition: background 0.3s ease-in-out;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #8e6b4b; /* Darker coffee brown */
+}
+
+/* Existing Side Scroller Section */
+#side-scroller {
+    background-color: #fff8f0; /* Cream background */
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+}
+
+/* Side Scroller Heading */
+#side-scroller h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #6b4e31; /* Warm brown color */
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Scroll Container */
+.scroller-wrapper {
+    overflow-x: auto; /* Allow horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    padding: 0 20px; /* Padding for better visual separation */
+    scrollbar-width: thin; /* Thin scrollbar for Firefox */
+    scrollbar-color: #6b4e31 #f2e6d9; /* Thumb color and track color for Firefox */
+    position: relative;
+}
+
+/* Webkit Browsers (Chrome, Safari) */
+.scroller-wrapper::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.scroller-wrapper::-webkit-scrollbar-track {
+    background: #f2e6d9; /* Light beige background for the track */
+    border-radius: 8px; /* Rounded corners for the track */
+}
+
+.scroller-wrapper::-webkit-scrollbar-thumb {
+    background: #6b4e31; /* Warm brown color for the thumb */
+    border-radius: 8px; /* Rounded corners for the thumb */
+}
+
+.scroller-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #8e6b4b; /* Darker color on hover */
+}
+
+/* Scrollable Content */
+.scroller {
+    display: flex;
+    gap: 30px;
+    padding: 20px 0;
+    align-items: center; /* Center items vertically */
+}
+
+/* Individual Scroller Item */
+.scroller-item {
+    min-width: 300px;
+    flex-shrink: 0;
+    text-align: center;
+    background: #f2e6d9; /* Light beige background */
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styling */
+.scroller-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Title Styling */
+.scroller-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #4a3e3a; /* Dark brown text */
+}
+
+/* Description Styling */
+.scroller-item p {
+    font-size: 16px;
+    color: #4a3e3a; /* Dark brown text */
+}
+
+/* Hover Effect */
+.scroller-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    #side-scroller {
+        padding: 60px 0;
+    }
+    
+    .scroller-item {
+        min-width: 250px; /* Adjust size for smaller screens */
+    }
+
+    #side-scroller h2 {
+        font-size: 36px; /* Smaller font size for headings */
+    }
+}
+
+/* Features Section */
+#features {
+    background: linear-gradient(120deg, #f2e6d9, #fff8f0); /* Cream gradient */
+    padding: 80px 0;
+    text-align: center;
+}
+
+#features h2 {
+    font-size: 48px;
+    margin-bottom: 50px;
+    color: #6b4e31; /* Warm brown color */
+}
+
+.feature {
+    margin-bottom: 60px;
+}
+
+.feature img {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature img:hover {
+    transform: scale(1.05);
+}
+
+/* Download Section */
+#download {
+    background: linear-gradient(120deg, #b58b63, #f2e6d9); /* Warm brown to cream gradient */
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+}
+
+#download h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+#download p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    background: #b58b63; /* Coffee brown color */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 18px;
+    margin: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #8e6b4b; /* Darker coffee brown */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #6b4e31; /* Dark brown */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #ffd699; /* Light cream color */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* Meet the Team Section */
+/* Meet the Team Section */
+#meet-the-team {
+    background-color: #fff8f0; /* Cream background */
+    padding: 80px 0;
+    text-align: center;
+}
+
+#meet-the-team h2 {
+    font-size: 48px;
+    margin-bottom: 50px;
+    color: #6b4e31; /* Warm brown color */
+}
+
+/* Team Members Container */
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 0 10px; /* Add padding for better spacing on smaller screens */
+}
+
+/* Individual Team Member Card */
+.team-member {
+    background: #f2e6d9; /* Light beige background */
+    border-radius: 15px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    flex: 1 1 220px; /* Flex-grow and basis for responsiveness */
+}
+
+.team-member img {
+    width: 80%;
+    height: auto;
+    border-radius: 35%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team-member h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #4a3e3a; /* Dark brown text */
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #4a3e3a; /* Dark brown text */
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .team-member {
+        flex: 1 1 100%; /* Stack team members vertically */
+        margin-bottom: 20px;
+    }
+}
